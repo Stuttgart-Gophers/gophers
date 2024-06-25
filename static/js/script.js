@@ -5,10 +5,10 @@ document.addEventListener('DOMContentLoaded', () => {
     const gophers = document.querySelector('.animation-container');
 
     const gopherImages = [
-        'gophers/small-gopher-1.png',
-        'gophers/small-gopher-2.png',
-        'gophers/small-gopher-3.png',
-        'gophers/small-gopher-4.png',
+        'static/img/small-gopher-1.png',
+        'static/img/small-gopher-2.png',
+        'static/img/small-gopher-3.png',
+        'static/img/small-gopher-4.png',
     ];
 
     // Create gopher elements once and store them in an array
@@ -117,4 +117,18 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     animateGophers();
+    
+    document.addEventListener('scroll', () => {
+        const container = document.querySelector('.center-gopher');
+        const triggerPoint = window.innerHeight / 2; // Adjust trigger point as needed
+    console.log('mda')
+        if (window.scrollY > triggerPoint) {
+            container.classList.add('animate');
+            container.classList.remove('center');
+        } else {
+            container.classList.add('center');
+            container.classList.remove('animate');
+        }
+    });
 });
+
