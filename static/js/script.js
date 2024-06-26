@@ -123,11 +123,11 @@ document.addEventListener('DOMContentLoaded', () => {
         const triggerPoint = window.innerHeight / 2; // Adjust trigger point as needed
     console.log('mda')
         if (window.scrollY > triggerPoint) {
-            container.classList.add('animate');
+            container.classList.add('top-left');
             container.classList.remove('center');
         } else {
             container.classList.add('center');
-            container.classList.remove('animate');
+            container.classList.remove('top-left');
         }
     });
 });

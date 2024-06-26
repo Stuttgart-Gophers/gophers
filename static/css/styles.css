@@ -97,7 +97,7 @@ body, html {
     }
 }
 
-.center-gopher.animate {
+.center-gopher.top-left {
     animation: moveToTopLeft 2s forwards;
 }
 
