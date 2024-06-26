@@ -5,10 +5,10 @@ document.addEventListener('DOMContentLoaded', () => {
     const gophers = document.querySelector('.animation-container');
 
     const gopherImages = [
-        'small-gopher-1.png',
-        'small-gopher-2.png',
-        'small-gopher-3.png',
-        'small-gopher-4.png',
+        'gophers/small-gopher-1.png',
+        'gophers/small-gopher-2.png',
+        'gophers/small-gopher-3.png',
+        'gophers/small-gopher-4.png',
     ];
 
     // Create gopher elements once and store them in an array
